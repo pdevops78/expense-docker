@@ -5,4 +5,6 @@ ENV                        DB_HOST=mysql
 RUN                        mkdir /app
 WORKDIR                     /app
 COPY                        code/* /app/
+RUN                         npm install
+CMD                         ["node","index.js"]
 
