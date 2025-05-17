@@ -7,5 +7,5 @@ RUN                        chown expense:expense /app
 WORKDIR                     /app
 COPY                        code/* /app/
 RUN                         npm install
-CMD                         ["node","index.js"]
+CMD                         [ "node","index.js" ]
 
